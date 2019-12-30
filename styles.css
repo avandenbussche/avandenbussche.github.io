@@ -1,3 +1,82 @@
-header, section, footer {
-    
+body, html { font-weight: 200; }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Barlow', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+    h2 {
+        font-weight: 500;
+        text-transform: uppercase;
+        font-variant: small-caps;
+        letter-spacing: 0.4em;
+        font-size: 1.4em;
+        margin-bottom: 40px;
+    }
+
+    h3 {
+        /* matches em significantly... see below */
+        margin: 5px 0;
+        font-size: 1.8em;
+    }
+
+.font-light { font-weight: 300; }
+
+a {
+    color: inherit;
+    text-decoration-style: dotted;
+}
+
+    a:hover {
+        color: inherit;
+        text-decoration-style: solid;
+    }
+
+em, h3 {
+    font-family: 'Barlow Semi Condensed', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+code {
+    border-radius: 1px;
+}
+
+header {
+    padding-top: 50px;
+}
+
+    header .tagline {
+        font-size: 1.5em;
+        text-align: right;
+        text-transform: lowercase;
+        font-variant: small-caps;
+        line-height: 1em;
+        margin-top: 45px;
+    }
+
+        header .tagline em { text-transform: inherit; }
+
+.about-me {
+    position: relative;
+    margin: 30px 0;
+}
+
+section {
+    padding: 50px 0;
+}
+
+    section.grey { background-color: #f8f8f8; color: #444444; }
+
+footer {
+    padding: 30px 0;
+    background-color: #222222;
+    color: #919191;
 }
