@@ -13,7 +13,7 @@ h1, h2, h3, h4, h5, h6 {
         font-variant: small-caps;
         letter-spacing: 0.4em;
         font-size: 1.4em;
-        margin-bottom: 40px;
+        margin-bottom: 30px;
     }
 
     h3 {
@@ -33,6 +33,33 @@ a {
         color: inherit;
         text-decoration-style: solid;
     }
+
+    a.invisible, a.invisible:hover {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    a.button {
+        display: inline-block;
+        margin: 0 auto;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-variant: small-caps;
+        letter-spacing: 0.4em;
+        font-size: 0.5em;
+        border-radius: 1px;
+        border-color: #444444;
+        color: inherit;
+        transition: all 0.3s ease 0s;
+        word-wrap: break-word;
+    }
+
+        a.button:hover {
+            opacity: 1;
+            border-color: #222222;
+            background-color: #222222;
+            color: #ffffff;
+        }
 
 em, h3 {
     font-family: 'Barlow Semi Condensed', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
