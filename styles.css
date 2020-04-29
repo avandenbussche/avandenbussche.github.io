@@ -16,7 +16,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     h3 {
-        /* matches em significantly... see below */
+        /* matches em tag significantly... see below */
         margin: 5px 0;
         font-size: 1.8em;
     }
@@ -99,10 +99,43 @@ section {
     padding: 50px 0;
 }
 
+    section:last-of-type { margin-bottom: 50px; }
+
     section.grey { background-color: #fcfcfc; color: #373737; }
 
 footer {
     padding: 30px 0;
     background-color: #171717;
-    color: #bbbbbb;
+    color: #ffffff;
 }
+
+    footer ul.social-icons {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align: right;
+    }
+
+        footer ul.social-icons li {
+            vertical-align: top;
+            display: inline;
+        }
+
+            footer ul.social-icons li a {
+                text-decoration: none;
+                display: inline-block;
+                padding: 0 6px;
+                margin: 0 1px;
+                font-size: 1.5em;
+                font-weight: 400;
+                color: #ffffff;
+                background-color: #171717;
+                border-radius: 1px;
+                transition: all 0.3s ease 0s;
+            }
+
+                footer ul.social-icons li a:hover {
+                    text-decoration: none;
+                    color: #171717;
+                    background-color: #ffffff;
+                }

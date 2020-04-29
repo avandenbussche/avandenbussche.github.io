@@ -11,12 +11,6 @@
             gtag('js', new Date());
             gtag('config', 'UA-27511982-2');
 
-            /**
-            * Function that registers a click on an outbound link in Analytics.
-            * This function takes a valid URL string as an argument, and uses that URL string
-            * as the event label. Setting the transport method to 'beacon' lets the hit be sent
-            * using 'navigator.sendBeacon' in browser that support it.
-            */
             var captureOutboundLink = function(url) {
                 gtag('event', 'click', {
                     'event_category': 'outbound',
@@ -30,14 +24,16 @@
         <title>Adam Vandenbussche</title>
 
         <link href="https://fonts.googleapis.com/css?family=Barlow:200,500|Barlow+Semi+Condensed:100,300,400&display=swap" rel="stylesheet">
+        <link href="fontawesome/css/fontawesome.min.css" rel="stylesheet">
+        <link href="fontawesome/css/brands.min.css" rel="stylesheet">
         <link rel="stylesheet" href="normalize.css">
         <link rel="stylesheet" href="skeleton.css">
         <link href="styles.css" rel="stylesheet">
 
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta charset="UTF-8" name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
-        <meta name="description" content="Adam Vandenbussche. Intellectually curious. Lifelong learner. Technically minded and socially motivated. Dartmouth student majoring in Computer Science interested in machine learning, the ethics of AI, and the impact of disruptive technologies on society.">
-        <meta name="author" content="Adam Vandenbussche">
+        <meta charset="UTF-8" name="viewport" content="width=device-width, user-scalable=no, initial-scale=1" />
+        <meta name="description" content="Intellectually curious. Lifelong learner. Technically minded and socially motivated. Dartmouth student studying Computer Science interested in entrepreneurship, digital decentralization, the ethics of AI, and the impact of disruptive technologies on society." />
+        <meta name="author" content="Adam Vandenbussche" />
 
     </head>
 
@@ -71,62 +67,16 @@
 
                 <div class="row">
                     <div class="twelve columns about-me">
-                        <p>Hey! I'm a rising junior at <a href="https://home.dartmouth.edu" target="_blank">Dartmouth College</a> from Montreal majoring in <em>Computer Science</em> with a special focus on <em>Tech Policy</em>. I'm interested in <em>entrepreneurship</em>, the <em>ethics</em> of <em>AI</em>, and the impact of disruptive technologies on <em>society</em>.</p>
+                        <p>Hey! I'm a rising junior at <a href="https://home.dartmouth.edu" target="_blank">Dartmouth College</a> from Montreal studying <em>Computer Science</em> with a special focus on <em>Tech Policy</em>. I'm interested in <em>entrepreneurship</em>, digital <em>decentralization</em>, the <em>ethics</em> of <em>AI</em>, and the impact of disruptive technologies on <em>society</em>.</p>
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="eight columns">
+                    <div class="twelve columns">
                         <p>I'm currently working as a <em>Java Developer Intern</em> at <a href="https://www.workjam.com/" target="_blank">WorkJam</a>.</p>
-                    </div>
-                    <div class="four columns">
-                        <p style="text-align: center;">
-                            <a class="button" href="#contact" style="width: 90%; max-width: 200px;">
-                                Contact Me
-                            </a>
-                        </p>
                     </div>
                 </div>
                 
-            </div>
-        </section>
-
-        <section class="grey">
-            <div class="container">
-            
-                <div class="row">
-                    <div class="twelve columns">
-                        <h2>Skills</h2>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="three columns">
-                        <h3>Technical</h3>
-                    </div>
-                    <div class="nine columns">
-                        <p>I'm proficient in <em>Go</em>, <em>Java</em>, <em>Matlab</em>, <em>Python</em>, and <em>R</em>. I've also worked with <em>Cassandra</em>, <em>Docker</em>, and <em>Kubernetes</em>.
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="three columns">
-                        <h3>Interpersonal</h3>
-                    </div>
-                    <div class="nine columns">
-                        <p>I'm a natural leader and practiced public speaker (check out <a href="https://vimeo.com/274582287">my Grade&nbsp;12 valedictory address</a>). I've worked as an outreach intern promoting Dartmouth's off-campus programs. I also have an affinity for teaching, having worked as an assistant French teacher and a sailing instructor.</p>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="three columns">
-                        <h3>Linguistic</h3>
-                    </div>
-                    <div class="nine columns">
-                        <p><em>English</em> is my first language, although I also speak <em>French</em> fluently. I also know a bit of <em>German</em> and studied abroad in Berlin during summer 2019. </p>
-                    </div>
-                </div>
-
             </div>
         </section>
 
@@ -142,7 +92,7 @@
                 <div class="row">
                     <div class="eight columns">
                         <h3>Data-Based Transit Planner</h3>
-                        <p>Public transit systems intrigue me. For my IB Math HL Internal Assessment, I developed an algorithm that proposes effective public transit routes given points of interest. In pursuing this project, I hoped to learn more about using data analysis to solve a real world problem. I wrote a Python script to scrape all the points of interest in a given region from Google Maps, then I used R to process the data.</p>
+                        <p>Public transit systems intrigue me. For my IB Math HL Internal Assessment, I developed an algorithm that proposes effective public transit routes given points of interest. In pursuing this project, I hoped to learn more about using data analysis to solve a real-world problem. I wrote a Python script to scrape all the points of interest in a given region from Google Maps, then I used R to process the data.</p>
                         <a class="button" target="_blank" href="attached/adam_vandenbussche_math_ia.pdf" style="margin-right: 10px;">
                             Read the paper
                         </a>
@@ -156,7 +106,7 @@
                     </div>
                 </div>
 
-                <div style="height: 30px"></div>
+                <div style="height: 50px"></div>
 
                 <div class="row">
                     <div class="eight columns">
@@ -178,34 +128,23 @@
             </div>
         </section>
 
-        <section class="grey">
-            <div class="container">
-            
-                <a name="contact"></a>
-                <h2>Get in Touch</h2>
-
-                <div class="row">
-                    <div class="twelve columns">
-                        <p>I can be reached either on <a href="https://www.linkedin.com/in/adamcv/" target="_blank">LinkedIn</a> or by email at <span style="font-family: monospace; font-size: 1.1em; line-height: 1em;;">adam[at]adamv.ca</span>. Feel free to check out my <a href="https://github.com/avandenbussche" target="_blank">Github</a>!
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
         <footer class="u-full-width">
             <div class="container">
 
                 <div class="row">
-                    <div class="twelve columns">
-                        <!-- hand-coded mit liebe &agrave; montr&eacute;al -->
+                    <div class="six columns" style="margin-top: 6px">
                         thanks&nbsp;&nbsp;|&nbsp;&nbsp;merci&nbsp;&nbsp;|&nbsp;&nbsp;danke
+                    </div>
+                    <div class="six columns">
+                        <ul class="social-icons">
+                            <li><a href="https://www.linkedin.com/in/adamcv/" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="https://github.com/avandenbussche" target="_blank" class="social-icon"><i class="fab fa-github"></i></a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
 
-            </footer>
-
+        </footer>
 
             <script type="text/javascript">
                 var as = document.getElementsByTagName("a");
