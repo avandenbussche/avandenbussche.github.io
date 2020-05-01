@@ -99,7 +99,7 @@ section {
     padding: 50px 0;
 }
 
-    section:last-of-type { margin-bottom: 50px; }
+    section:last-of-type { margin-bottom: 75px; }
 
     section.grey { background-color: #fcfcfc; color: #373737; }
 
