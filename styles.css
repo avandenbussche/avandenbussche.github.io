@@ -139,3 +139,13 @@ footer {
                     color: #171717;
                     background-color: #ffffff;
                 }
+
+@media (max-width: 915px) {
+
+    .six.columns { width: 100%; margin: 0; }
+    
+    .tagline { text-align: left !important; margin-bottom: -30px; }
+
+        .tagline br { display: none; }
+
+}
