@@ -26,6 +26,7 @@
         <link href="https://fonts.googleapis.com/css?family=Barlow:200,500|Barlow+Semi+Condensed:100,300,400&display=swap" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/fontawesome.min.css" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/brands.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/solid.min.css" rel="stylesheet">
         <link href="normalize.css" rel="stylesheet">
         <link href="skeleton.css" rel="stylesheet">
         <link href="styles.css" rel="stylesheet">
@@ -137,7 +138,7 @@
                     </div>
                     <div class="six columns">
                         <ul class="social-icons">
-                            <li><a href="" target="_blank" class="social-icon" onclick="openEmailAddress(this)"><i class="fas fa-envelope"></i></a></li>
+                            <li><a href="" class="social-icon" onclick="gcfrv(this)"><i class="fas fa-envelope"></i></a></li>
                             <li><a href="https://www.linkedin.com/in/adamcv/" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a></li>
                             <li><a href="https://github.com/avandenbussche" target="_blank" class="social-icon"><i class="fab fa-github"></i></a></li>
                         </ul>
@@ -160,18 +161,25 @@
         </script>
 
         <script type="text/javascript">
-            function rotDecode(a) {
-                return a.replace(/[a-zA-Z]/g, function(c) {
-                    return String.fromCharCode((c <= "Z" ? 90 : 122) >= (c = c.charCodeAt(0) + 47) ? c : c - 26);
-                })
+            function waedc(x) {
+                var s = '';
+                for (var i = 0; i < x.length; i++) {
+                    var j = x.charCodeAt(i);
+                    if ((j >= 33) && (j <= 126)) {
+                        s += String.fromCharCode(33 + ((j + 14) % 94));
+                    } else {
+                        s += String.fromCharCode(j);
+                    }
+                }
+                return s;
             }
 
-            function openEmailAddress(element) {
-                var fdfwb = rotDecode(">2:=E@i");
-                var iroft = rotDecode("252>o");
-                var cbjcd = rotDecode("252>G]42");
-                element.setAttribute("href", fdfwb+iroft+cbjcd);
-                element.setAttribute("onclick", "");
+            function gcfrv(e) {
+                var fdfwb = waedc(">2:=E@i");
+                var iroft = waedc("252>o");
+                var cbjcd = waedc("252>G]42");
+                e.setAttribute("href", fdfwb+iroft+cbjcd);
+                e.setAttribute("onclick", "");
             }
         </script>
 
