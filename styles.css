@@ -21,6 +21,12 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 1.8em;
     }
 
+        h3 small {
+            display: inline-block;
+            margin-left: 15px;
+            font-weight: 100;
+        }
+
 .font-light { font-weight: 300; }
 
 a {
