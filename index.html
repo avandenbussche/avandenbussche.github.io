@@ -3,24 +3,6 @@
 
     <head>
 
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-27511982-2"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'UA-27511982-2');
-
-            var captureOutboundLink = function(url) {
-                gtag('event', 'click', {
-                    'event_category': 'outbound',
-                    'event_label': url,
-                    'transport_type': 'beacon',
-                    'event_callback': function(){document.location = url;}
-                });
-            }
-        </script>
-
         <title>Adam Vandenbussche</title>
 
         <link href="https://fonts.googleapis.com/css?family=Barlow:200,500|Barlow+Semi+Condensed:100,300,400&display=swap" rel="stylesheet">
@@ -191,18 +173,6 @@
             </div>
 
         </footer>
-
-        <script type="text/javascript">
-            var as = document.getElementsByTagName("a");
-            for (var i = 0; i < as.length; i++) {
-                as[i].addEventListener('click', function(e) {
-                    if(window.ga && ga.create) {
-                        e.preventDefault();
-                        captureOutboundLink( e.target.href );
-                    }
-                })
-            }
-        </script>
 
         <script type="text/javascript">
             function waedc(x) {
